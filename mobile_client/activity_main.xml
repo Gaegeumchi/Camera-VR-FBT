@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/autoDetectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto Detect IP" />
+
+    <Button
+        android:id="@+id/inputIpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input IP" />
+
+    <EditText
+        android:id="@+id/ipAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP Address"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/connectionStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection Status"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/scanningTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanning..."
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/detectFailedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP Address Detection Failed"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/cameraSwitchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch Camera"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:visibility="gone" />
+
+
+</LinearLayout>
