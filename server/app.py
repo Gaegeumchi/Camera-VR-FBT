@@ -15,7 +15,6 @@ pose_estimator = PoseEstimator()
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
-    """ 클라이언트(모바일)와 WebSocket을 통한 실시간 데이터 수신 """
     await websocket.accept()
     websocket_server.clients.append(websocket)
     try:
