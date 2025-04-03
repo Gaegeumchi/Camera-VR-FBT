@@ -8,7 +8,7 @@ class PoseEstimator:
         self.pose = self.mp_pose.Pose()
 
     async def process_frame(self, image):
-        """ Mediapipe를 활용하여 포즈 추출 """
+        # Mediapipe를 활용하여 포즈 추출
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         results = self.pose.process(image_rgb)
         if results.pose_landmarks:
